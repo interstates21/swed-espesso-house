@@ -1,0 +1,162 @@
+/* Remove default style for elements  */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+input, button, submit { border:none; background: none; } 
+a {
+    background-color: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --rose: #F4C6D4;
+    --ivory: #EFEAE4;
+    --champagne: #F3DBB2;
+    --nude: #BBA78C
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#presentation {
+    display: flex;
+    height: 400px;
+}
+
+.left, .right {
+    flex: 1
+}
+
+.presentation-title {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 20%;
+}
+
+.presentaion-picture {
+    background: url("https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80") center / cover;
+}
+
+#special-offers {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.tab-container {
+    display: flex;
+    background-color: var(--ivory);
+    width: 100%;
+    justify-content: space-around;
+
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab:hover {
+    background-color: var(--rose);
+}
+
+.tab-active {
+    border-bottom: 4px solid var(--nude);
+    border-radius: 1px;
+}
+
+
+.special-offers-item {
+    align-self: center;
+    border: 2px solid var(--rose);
+    border-radius: 6px;
+    width: 160px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.special-offers-item img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#map {
+    display: flex;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    border-left: 5px solid transparent;
+}
+
+
+.location-item:hover {
+    background-color: #f2f2f2;
+}
+
+.location-active {
+    border-left: 5px solid var(--nude);
+    border-radius: 1px;
+}
+
+.map-left-title {
+    margin-bottom: 20px;
+}
+
+.location-title-wrapeer {
+    
+}
+
+.city {
+    font-size: 2rem;
+}
+.address {
+    font-size: 1.5rem;
+}
