@@ -24,6 +24,11 @@ a {
 body {
     font-family: 'Shadows Into Light', cursive;
 }
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
 header {
     display: flex;
     align-items: center;
@@ -31,6 +36,7 @@ header {
     width: 100vw;
     box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -44,7 +50,7 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    margin: 30px 20px;
 }
 
 #presentation {
@@ -63,14 +69,14 @@ section {
     padding: 20px 20%;
 }
 
-.presentaion-picture {
+.presentation-picture {
     background: url("https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80") center / cover;
 }
 
 #special-offers {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 1;
 }
 
 .tab-container {
@@ -104,10 +110,10 @@ section {
 
 
 .special-offers-item {
-    align-self: center;
+    /* align-self: center; */
     border: 2px solid var(--rose);
     border-radius: 6px;
-    width: 160px;
+    width: 200px;
     height: 200px;
     padding: 20px;
     display: flex;
@@ -146,17 +152,27 @@ section {
     border-radius: 1px;
 }
 
-.map-left-title {
-    margin-bottom: 20px;
-}
-
-.location-title-wrapeer {
-    
-}
 
 .city {
     font-size: 2rem;
 }
 .address {
     font-size: 1.5rem;
+}
+
+#gift-cards {
+    flex: 1;
+}
+
+.gift-card {
+    height: 150px;
+}
+
+.half-screen-sections {
+    display: flex;
+}
+
+#jumbotron {
+    height: 200px;
+    background-color: var(--ivory);
 }
